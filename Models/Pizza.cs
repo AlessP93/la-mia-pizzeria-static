@@ -1,0 +1,20 @@
+﻿namespace la_mia_pizzeria_static.Models
+{
+    //CLASSE PIZZA
+    public class Pizza
+    {
+        public string Nome { get; set; }
+        public string Description { get; set; }
+        public string Pic { get; set; }
+        public string Price { get; set; }
+
+        //COSTRUTTORE
+        public Pizza(string nome, string description, string pic, string price)
+        {
+            Nome = nome;
+            Description = description;
+            Pic = pic;
+            Price = price;
+        }
+    }
+}

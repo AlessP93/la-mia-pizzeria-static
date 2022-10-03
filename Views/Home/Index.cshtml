@@ -1,0 +1,45 @@
+﻿
+    @{ Layout = null; }
+<body>
+    <header class="d-flex justify-content-between">
+        <img src="../Models/img/pizza.png.png" alt="Immagine Pizza">
+        <span>Utente</span>
+    </header>
+    <main>
+        <div class="text-center">
+        <h1 class="display-4">Welcome to Pizza Hunt</h1>
+            <div class="row">
+                <div class="col-6 d">
+                    @{
+                        var pizzeRosse = new string[]
+                        { "Margherita", "Napoli", "Capricciosa", "Salsiccia", "Hawaii", "Tonnata" };
+                    }
+                    <h3>Menù Pizze Rosse:</h3>
+                    <ul>
+                        @foreach (string pizza in pizzeRosse)
+                        {
+                            <li>@pizza</li>
+                        }
+                    </ul>
+                </div>
+                <div class="col-6">
+                    @{
+                        var pizzeBianche = new string[]
+                        { "Quattro Formaggi", "Campagnola", "Funghi", "Bresaola", "Pistacchio", "Zucchine" };
+                    }
+                    <h3>Menù Pizze Bianche:</h3>
+                    <ul>
+                        @foreach (string pizza in pizzeBianche)
+                        {
+                            <li>@pizza</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+            <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        </div>
+    </main>
+    <footer>
+        <h5>Visita il nostro profilo internet <a href="https://www.pizzahut.co.uk/">•Pizza Hunt•</a></h5>
+    </footer>
+</body>
